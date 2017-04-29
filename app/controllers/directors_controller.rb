@@ -27,9 +27,11 @@ class DirectorsController < ApplicationController
 
   def edit_form
     @director = Director.find(params[:id])
+    @id_direct = params[:id]
   end
 
   def update_row
+    # @id_direct=
     @director = Director.find(params[:id])
 
     @director.dob = params[:dob]
