@@ -22,7 +22,7 @@ class DirectorsController < ApplicationController
 
     @director.save
 
-    redirect_to("/directors")
+  render("show")
   end
 
   def edit_form
@@ -39,7 +39,7 @@ class DirectorsController < ApplicationController
 
     @director.save
 
-    render("show")
+    redirect_to("/directors")
   end
 
   def destroy
